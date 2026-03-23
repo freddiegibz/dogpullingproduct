@@ -337,11 +337,15 @@
       }
 
       .proof-slot__frame {
-        aspect-ratio: 4 / 5;
         border: 1px solid var(--line);
         border-radius: 12px;
-        background:
-          linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(238, 247, 253, 0.96) 100%);
+        overflow: hidden;
+        background: #ffffff;
+      }
+
+      .proof-slot__frame img {
+        width: 100%;
+        height: auto;
       }
 
       .proof-slot__label {
@@ -541,7 +545,7 @@
               </p>
 
               <div class="hero__actions">
-                <a class="btn" href="#offer">Get instant access for £19</a>
+                <a class="btn" href="#offer">Get instant access for &pound;19</a>
               </div>
 
               <p class="hero__trust">Use it on your next few walks. If it does not help you stop guessing and feel more in control, get your money back.</p>
@@ -605,15 +609,14 @@
 
             <div>
               <p class="eyebrow">Proof</p>
-              <h3>Photo testimonial placeholder #1</h3>
-              <p class="lede" style="margin-top: 0.75rem;">
-                Put a WhatsApp, email, or Instagram DM screenshot here from a buyer saying walks finally felt easier or they finally understood why nothing had worked before.
-              </p>
+              <h3>What dog owners say after using it</h3>
 
               <div class="proof-slot">
-                <div class="proof-slot__frame"></div>
-                <div class="proof-slot__label">Drop proof screenshot here</div>
-                <p class="proof-slot__copy">Best use: a raw message about less pulling, less stress, or a walk that finally felt manageable.</p>
+                <div class="proof-slot__frame">
+                  <img src="test2.png" alt="Customer testimonial screenshot" />
+                </div>
+                <div class="proof-slot__label">Real message from a buyer</div>
+                <p class="proof-slot__copy">Less pulling. Less stress. Walks that finally feel manageable.</p>
               </div>
             </div>
           </div>
@@ -659,7 +662,7 @@
                 This is not more random lead-walking advice. It shows you why the pulling keeps sticking, why the usual stuff has not fixed it, and what to do differently on your next walk.
               </p>
               <div class="note">
-                <p>This works because it changes what the walk is teaching your dog, not just the tool you buy or the trick you try.</p>
+                <p>That is why stopping, treats, harnesses, and random tips can help for a minute and still not fix the walk. This changes what the walk is teaching your dog.</p>
               </div>
 
               <ul class="offer-list">
@@ -674,7 +677,7 @@
             <div class="offer-shell">
               <div class="offer-box">
                 <p class="price-label">Pay once</p>
-                <div class="price">£19</div>
+                <div class="price">&pound;19</div>
                 <p class="lede" style="margin-top: 0.8rem;">
                   Pay once. Instant download. Use it before tomorrow's walk turns into the same fight again.
                 </p>
@@ -683,9 +686,11 @@
               </div>
 
               <div class="proof-slot">
-                <div class="proof-slot__frame"></div>
-                <div class="proof-slot__label">Photo testimonial placeholder #2</div>
-                <p class="proof-slot__copy">Put a raw buyer screenshot here saying the guide made walks manageable, reduced pulling, or finally gave them a plan that worked outside.</p>
+                <div class="proof-slot__frame">
+                  <img src="test3.png" alt="Customer testimonial screenshot" />
+                </div>
+                <div class="proof-slot__label">Real message from a buyer</div>
+                <p class="proof-slot__copy">Proof that this feels practical and works on real walks, not just in theory.</p>
               </div>
             </div>
           </div>
@@ -730,7 +735,7 @@
             </p>
 
             <div class="hero__actions" style="margin-top: 1.4rem;">
-              <a class="btn" href="thank-you.html">Get The Calm Walk Method for £19</a>
+              <a class="btn" href="thank-you.html">Get The Calm Walk Method for &pound;19</a>
             </div>
           </div>
         </section>
