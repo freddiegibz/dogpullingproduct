@@ -262,6 +262,11 @@
         background: linear-gradient(180deg, rgba(227, 241, 251, 0.78) 0%, rgba(247, 251, 254, 0) 100%);
       }
 
+      .section--bridge {
+        padding: 2.2rem 0;
+        border-top: 0;
+      }
+
       .section--problem {
         background: linear-gradient(180deg, rgba(217, 234, 246, 0.92) 0%, rgba(247, 251, 254, 0.08) 100%);
       }
@@ -360,6 +365,15 @@
         font-size: 0.94rem;
       }
 
+      .proof-bridge {
+        max-width: 430px;
+        margin: 0 auto;
+      }
+
+      .proof-bridge .proof-slot {
+        margin-top: 0;
+      }
+
       .offer-shell {
         padding: 1.5rem;
         border: 1px solid var(--line);
@@ -438,6 +452,10 @@
         .hero,
         .section {
           padding: 3.8rem 0;
+        }
+
+        .section--bridge {
+          padding: 1.7rem 0;
         }
 
         .hero {
@@ -652,6 +670,18 @@
           </div>
         </section>
 
+        <section class="section section--bridge">
+          <div class="wrap">
+            <div class="proof-bridge">
+              <div class="proof-slot">
+                <div class="proof-slot__frame">
+                  <img src="test3.png" alt="Customer testimonial screenshot" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section class="section section--warm" id="offer">
           <div class="wrap two-col">
             <div>
@@ -682,13 +712,6 @@
                 </p>
                 <a class="btn" href="thank-you.html">Get instant access</a>
                 <p class="offer-micro">Less than another tool you hope will fix it. More useful than another random tip.</p>
-              </div>
-
-              <div class="proof-slot">
-                <div class="proof-slot__frame">
-                  <img src="test3.png" alt="Customer testimonial screenshot" />
-                </div>
-                <p class="proof-slot__copy">It finally made the problem click, and walks felt easier instead of stressful.</p>
               </div>
             </div>
           </div>
