@@ -190,6 +190,23 @@
         font-size: 1.05rem;
       }
 
+      .lede--stacked {
+        max-width: 34rem;
+        color: var(--text);
+      }
+
+      .lede--stacked span {
+        display: block;
+      }
+
+      .lede--stacked span + span {
+        margin-top: 0.18rem;
+      }
+
+      .lede--stacked .lede-gap {
+        margin-top: 0.7rem;
+      }
+
       .hero-points,
       .offer-list,
       .plain-list,
@@ -284,6 +301,29 @@
         background: linear-gradient(180deg, rgba(227, 241, 251, 0.78) 0%, rgba(247, 251, 254, 0) 100%);
       }
 
+      .section--problem {
+        background: linear-gradient(180deg, rgba(217, 234, 246, 0.92) 0%, rgba(247, 251, 254, 0.08) 100%);
+      }
+
+      .section--problem .lede,
+      .section--problem .line-item p,
+      .section--problem .proof-slot__copy {
+        color: #354758;
+      }
+
+      .section--problem .line-group {
+        border-top-color: #bfd5e4;
+      }
+
+      .section--problem .line-item {
+        padding: 0.88rem 0;
+        border-bottom-color: #c7dceb;
+      }
+
+      .section--problem .line-item strong {
+        margin-bottom: 0.18rem;
+      }
+
       .stack {
         display: grid;
         gap: 1rem;
@@ -310,6 +350,21 @@
         padding: 1.05rem 1.1rem;
         border-left: 4px solid var(--accent);
         background: rgba(255, 255, 255, 0.78);
+      }
+
+      .note--belief {
+        border-left-width: 5px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 10px 24px rgba(22, 33, 44, 0.05);
+      }
+
+      .note--belief p {
+        color: var(--text);
+      }
+
+      .note--belief strong {
+        display: block;
+        margin-bottom: 0.18rem;
       }
 
       .proof-slot {
@@ -574,35 +629,40 @@
           </div>
         </section>
 
-        <section class="section section--warm">
+        <section class="section section--problem">
           <div class="wrap two-col">
             <div>
-              <p class="eyebrow">Problem</p>
-              <h2>If the walk keeps rewarding pulling, the pulling keeps getting stronger.</h2>
-              <p class="lede">
-                That is why the same problem keeps showing up tomorrow, next week, and next month. More tight leash. More stopping. More frustration. More wasted effort on tips, treats, and gear that never really fix the pattern.
+              <p class="eyebrow">Why nothing has stuck</p>
+              <h2>If pulling still gets your dog forward, it keeps happening.</h2>
+              <p class="lede lede--stacked">
+                <span>That's why the same problem keeps showing up</span>
+                <span>tomorrow, next week, and next month.</span>
+                <span class="lede-gap">More tight lead.</span>
+                <span>More stopping.</span>
+                <span>More frustration.</span>
+                <span>More wasted effort on tips, treats, and gear that never really fix the pattern.</span>
               </p>
 
-              <div class="note">
-                <p>Your dog is not blowing you off. They have learned that pulling still gets them forward. Until that changes, walks keep feeling like work.</p>
+              <div class="note note--belief">
+                <p><strong>Your dog is not blowing you off.</strong> They've learned that pulling still gets them forward. Until that changes, walks keep feeling like work.</p>
               </div>
 
               <div class="line-group">
                 <div class="line-item">
-                  <strong>The leash stays tight most of the walk</strong>
-                  <p>Your dog surges ahead and the walk turns into a physical fight.</p>
+                  <strong>The leash stays tight nearly the whole walk</strong>
+                  <p>Your dog surges ahead and the walk turns physical fast.</p>
                 </div>
                 <div class="line-item">
-                  <strong>Stopping every time takes forever</strong>
-                  <p>What should be a short route becomes a slow, frustrating mess.</p>
+                  <strong>Stopping every few seconds takes forever</strong>
+                  <p>What should be a short route becomes slow and frustrating.</p>
                 </div>
                 <div class="line-item">
-                  <strong>What works at home disappears outside</strong>
+                  <strong>What worked at home falls apart outside</strong>
                   <p>Smells, dogs, and excitement wipe out your progress fast.</p>
                 </div>
                 <div class="line-item">
-                  <strong>You start dreading the walk before it starts</strong>
-                  <p>The same problem keeps showing up day after day unless you change it.</p>
+                  <strong>You dread the walk before you clip the lead on</strong>
+                  <p>The same problem keeps showing up until you change the pattern.</p>
                 </div>
               </div>
             </div>
