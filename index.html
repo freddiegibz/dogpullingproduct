@@ -13,6 +13,8 @@
         --bg: #eef7fd;
         --bg-warm: #e3f1fb;
         --paper: #fcfeff;
+        --hero-bg: #f5efe4;
+        --hero-surface: rgba(255, 251, 245, 0.86);
         --text: #16212c;
         --muted: #506171;
         --line: #d5e6f1;
@@ -68,7 +70,10 @@
       }
 
       .hero {
-        padding-top: 2.2rem;
+        padding: 3.3rem 0 4.8rem;
+        background:
+          radial-gradient(circle at top left, rgba(255, 255, 255, 0.78), transparent 34%),
+          linear-gradient(180deg, #fbf8f1 0%, var(--hero-bg) 100%);
       }
 
       .hero__grid,
@@ -78,11 +83,17 @@
       }
 
       .hero__copy {
+        display: grid;
+        align-content: center;
+        gap: 1.1rem;
         max-width: 40rem;
       }
 
       .hero__media {
-        align-self: start;
+        display: grid;
+        gap: 1rem;
+        align-content: center;
+        justify-items: center;
       }
 
       .brand {
@@ -151,6 +162,24 @@
         font-size: 1.05rem;
       }
 
+      .hero .brand,
+      .hero .eyebrow,
+      .hero .lede,
+      .hero .hero__actions,
+      .hero .hero__trust,
+      .hero-proof {
+        margin-top: 0;
+      }
+
+      .hero .brand,
+      .hero .eyebrow {
+        margin-bottom: 0;
+      }
+
+      .hero .lede {
+        max-width: 35rem;
+      }
+
       .lede--stacked {
         max-width: 34rem;
         color: var(--text);
@@ -213,11 +242,12 @@
         min-height: 3.2rem;
         padding: 0.95rem 1.35rem;
         border-radius: 999px;
-        background: linear-gradient(180deg, #5aa6dc 0%, var(--accent) 100%);
+        border: 1px solid rgba(41, 109, 159, 0.18);
+        background: var(--accent);
         color: #fffdf9;
         font-size: 0.98rem;
         font-weight: 800;
-        box-shadow: 0 14px 28px rgba(63, 143, 203, 0.18);
+        box-shadow: 0 12px 24px rgba(63, 143, 203, 0.16);
       }
 
       .hero__trust {
@@ -228,13 +258,12 @@
       }
 
       .hero-proof {
-        margin-top: 1rem;
         max-width: 360px;
         overflow: hidden;
-        border: 1px solid rgba(22, 33, 44, 0.08);
-        border-radius: 16px;
-        background: var(--paper);
-        box-shadow: 0 14px 28px rgba(22, 33, 44, 0.08);
+        border: 1px solid rgba(22, 33, 44, 0.1);
+        border-radius: 18px;
+        background: var(--hero-surface);
+        box-shadow: 0 18px 30px rgba(22, 33, 44, 0.08);
       }
 
       .hero-proof img {
@@ -248,6 +277,15 @@
         border-radius: 18px;
         background: var(--paper);
         box-shadow: var(--shadow);
+      }
+
+      .hero .product-shot {
+        width: min(100%, 430px);
+        padding: 0.95rem;
+        border-radius: 26px;
+        border-color: rgba(22, 33, 44, 0.06);
+        background: var(--hero-surface);
+        box-shadow: 0 22px 42px rgba(22, 33, 44, 0.1);
       }
 
       .section {
@@ -423,7 +461,12 @@
           width: min(calc(100% - 2.5rem), 1040px);
         }
 
-        .hero__grid,
+        .hero__grid {
+          grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.88fr);
+          align-items: center;
+          gap: 4rem;
+        }
+
         .two-col {
           grid-template-columns: minmax(0, 1fr) minmax(320px, 0.88fr);
           align-items: start;
@@ -437,28 +480,26 @@
         }
 
         .hero {
-          padding-top: 1rem;
-          padding-bottom: 3rem;
+          padding: 2.2rem 0 3.2rem;
         }
 
         .hero__grid {
-          gap: 1.2rem;
+          gap: 2rem;
         }
 
         .hero__copy {
-          display: flex;
-          flex-direction: column;
-          gap: 0.8rem;
+          gap: 1rem;
         }
 
         .hero__media {
-          margin-bottom: 0.15rem;
+          gap: 0.85rem;
         }
 
         .hero .product-shot {
-          max-width: 350px;
+          max-width: 360px;
           margin: 0 auto;
-          border-radius: 16px;
+          padding: 0.75rem;
+          border-radius: 22px;
         }
 
         .brand {
@@ -496,8 +537,7 @@
         }
 
         .hero-proof {
-          max-width: 290px;
-          margin-top: 0.15rem;
+          max-width: 320px;
           margin-left: auto;
           margin-right: auto;
         }
@@ -533,19 +573,19 @@
               </p>
 
               <div class="hero__actions">
-                <a class="btn" href="thank-you.html">Get instant access for &pound;19</a>
+                <a class="btn" href="https://buy.stripe.com/7sY14m3QDdwMauI59MbZe0z">Get instant access for &pound;19</a>
               </div>
 
               <p class="hero__trust">30-day money-back guarantee.</p>
-
-              <div class="hero-proof">
-                <img src="testimonial1.jpg" alt="Customer testimonial screenshot" />
-              </div>
             </div>
 
             <div class="hero__media">
               <div class="product-shot">
                 <img src="productimage.jpg" alt="The Calm Walk Method product image" />
+              </div>
+
+              <div class="hero-proof">
+                <img src="testimonial1.jpg" alt="Customer testimonial screenshot" />
               </div>
             </div>
           </div>
@@ -634,15 +674,15 @@
           <div class="wrap two-col">
             <div>
               <p class="eyebrow">Use it today</p>
-              <h2>Get it now. Use it before your next walk.</h2>
+              <h2>Get this before the next bad walk.</h2>
               <p class="lede">
-                This is not more random lead-walking advice. If stopping, treats, and harnesses have not fixed it, it is because the walk is still teaching your dog to pull. This shows you what to do differently on your next walk.
+                If treats, stopping, and harnesses have not fixed it, the problem is not that you have missed one magic trick. The walk is still teaching your dog to pull. This shows you what to change before your next walk so you stop repeating the same fight.
               </p>
               <ul class="offer-list">
-                <li>Instant download</li>
+                <li>Download it now</li>
+                <li>Read it quickly tonight</li>
                 <li>Use it on your next walk</li>
-                <li>Plain, practical steps</li>
-                <li>No giant course to get through</li>
+                <li>No long course to get through</li>
               </ul>
             </div>
 
@@ -651,10 +691,10 @@
                 <p class="price-label">Pay once</p>
                 <div class="price">&pound;19</div>
                 <p class="lede" style="margin-top: 0.8rem;">
-                  Pay once. Instant download. Use it before tomorrow's walk turns into the same fight again.
+                  Use it before tomorrow's walk teaches more pulling again.
                 </p>
-                <a class="btn" href="thank-you.html">Get instant access</a>
-                <p class="offer-micro">Less than another tool you hope will fix it. More useful than another random tip.</p>
+              <a class="btn" href="https://buy.stripe.com/7sY14m3QDdwMauI59MbZe0z">Get instant access</a>
+                <p class="offer-micro">Better than buying another thing and hoping. Better than guessing again tomorrow.</p>
               </div>
 
               <div class="proof-slot">
@@ -697,7 +737,7 @@
             </p>
 
             <div class="hero__actions" style="margin-top: 1.4rem;">
-              <a class="btn" href="thank-you.html">Get The Calm Walk Method for &pound;19</a>
+            <a class="btn" href="https://buy.stripe.com/7sY14m3QDdwMauI59MbZe0z">Get The Calm Walk Method for &pound;19</a>
             </div>
           </div>
         </section>
