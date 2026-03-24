@@ -66,10 +66,9 @@
       }
 
       .site-header {
-        padding: 1rem 0 0;
-        background:
-          radial-gradient(circle at top left, rgba(255, 255, 255, 0.8), transparent 38%),
-          linear-gradient(180deg, #fbf8f1 0%, var(--hero-bg) 100%);
+        padding: 0.95rem 0 0;
+        background: linear-gradient(180deg, #fbf8f1 0%, var(--hero-bg) 100%);
+        border-bottom: 1px solid rgba(22, 33, 44, 0.06);
       }
 
       .site-header__inner {
@@ -78,17 +77,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 1rem;
-        padding: 0.9rem 1.1rem;
-        border: 1px solid rgba(22, 33, 44, 0.08);
-        border-radius: 999px;
-        background: rgba(255, 250, 242, 0.82);
-        box-shadow: 0 14px 28px rgba(42, 38, 32, 0.06);
+        padding: 0.8rem 0 0.9rem;
       }
 
       .site-header__brand {
         flex: 1 1 9rem;
         min-width: 0;
-        font-size: 0.98rem;
+        font-size: 0.92rem;
         font-weight: 800;
         line-height: 1.2;
         letter-spacing: -0.01em;
@@ -289,8 +284,9 @@
       .btn--nav {
         flex: 0 0 auto;
         margin-left: auto;
-        min-height: 2.9rem;
-        padding: 0.8rem 1.2rem;
+        min-height: 2.5rem;
+        padding: 0.65rem 1rem;
+        font-size: 0.88rem;
         box-shadow: none;
       }
 
@@ -567,7 +563,7 @@
         }
 
         .site-header {
-          padding-top: 0.75rem;
+          padding-top: 0.7rem;
         }
 
         .site-header__inner {
@@ -575,27 +571,21 @@
           grid-template-columns: minmax(0, 1fr) auto;
           align-items: center;
           gap: 0.75rem;
-          padding: 0.78rem 0.95rem;
+          padding: 0.5rem 0 0.75rem;
         }
 
         .site-header__brand {
-          max-width: 8.75rem;
-          font-size: 0.84rem;
+          max-width: 8rem;
+          font-size: 0.8rem;
           line-height: 1.2;
         }
 
         .btn--nav {
           margin-left: 0;
           justify-self: end;
-          min-height: 2.7rem;
-          padding: 0.68rem 0.88rem;
-          font-size: 0.88rem;
-        }
-
-        .eyebrow {
-          margin-bottom: 0;
-          font-size: 0.74rem;
-          letter-spacing: 0.05em;
+          min-height: 2.35rem;
+          padding: 0.58rem 0.82rem;
+          font-size: 0.82rem;
         }
 
         h1 {
@@ -652,17 +642,16 @@
                 <span class="hero__brand-mark"></span>
                 <span>The Calm Walk Method</span>
               </div>
-              <p class="eyebrow">For dog owners sick of being dragged on walks</p>
-              <h1>Stop the pulling cycle before the next walk.</h1>
+              <h1>If your dog drags you on walks, start here.</h1>
               <p class="lede">
-                This short guide shows you what to change on the walk so your dog stops learning that pulling works.
+                A short PDF you can read tonight and use on the next walk, so you stop getting dragged and stop feeling like nothing is working.
               </p>
 
               <div class="hero__actions">
                 <a class="btn" href="https://buy.stripe.com/7sY14m3QDdwMauI59MbZe0z">Get instant access for &pound;19</a>
               </div>
 
-              <p class="hero__trust">Instant download. Use it before the next walk. 30-day money-back guarantee.</p>
+              <p class="hero__trust">For people who have already tried treats, stopping, or a harness. Instant download. 30-day money-back guarantee.</p>
             </div>
 
             <div class="hero__media">
@@ -677,9 +666,9 @@
           <div class="wrap two-col">
             <div>
               <p class="eyebrow">Proof</p>
-              <h2>Dog owners do not need more random tips. They need a plan for the next walk.</h2>
+              <h2>If you're sick of trying things and your dog still pulls, this is for you.</h2>
               <p class="lede proof-intro">
-                The shift is simple: stop guessing, know what to reward, and know what to do when the walk starts falling apart.
+                It gives you something simple to do on the next walk instead of stopping every few seconds, getting nowhere, and coming home feeling like nothing helped.
               </p>
             </div>
 
@@ -688,7 +677,7 @@
                 <div class="proof-slot__frame">
                   <img src="test2.png" alt="Customer testimonial screenshot" />
                 </div>
-                <p class="proof-slot__copy">"It gave clear steps for the very next walk."</p>
+                <p class="proof-slot__copy">"It gave clear steps for the next walk instead of the same old advice."</p>
               </div>
             </div>
           </div>
@@ -700,7 +689,7 @@
               <p class="eyebrow">Why it keeps happening</p>
               <h2>If pulling still gets your dog forward, it keeps coming back.</h2>
               <p class="lede">
-                That is why treats, stopping, and gear can help for a moment and still not fix the walk. The pattern on the walk has to change.
+                That is why treats, stopping, and harnesses can seem like they help, but your dog still pulls the whole way home. If pulling still gets them where they want to go, it does not really stop.
               </p>
             </div>
 
@@ -731,8 +720,8 @@
               </p>
               <ul class="offer-list">
                 <li>Why the pulling keeps repeating</li>
-                <li>Your next-walk plan</li>
-                <li>What to reward and what to do when it falls apart</li>
+                <li>What to do on the next walk</li>
+                <li>What to do when your dog is ignoring you outside</li>
               </ul>
             </div>
 
@@ -743,10 +732,16 @@
                 <p class="price-label">Pay once</p>
                 <div class="price">&pound;19</div>
                 <p class="lede" style="margin-top: 0.8rem;">
-                  Read it tonight. Use it tomorrow. No subscription. No giant course. Just a clear next-walk plan.
+                  Read it tonight. Try it tomorrow. No subscription. No big course to get through.
                 </p>
                 <a class="btn" href="https://buy.stripe.com/7sY14m3QDdwMauI59MbZe0z">Get instant access</a>
-                <p class="offer-micro">If it does not help, ask for your money back.</p>
+                <p class="offer-micro">If it does not help, get your money back.</p>
+              </div>
+              <div class="proof-slot">
+                <div class="proof-slot__frame">
+                  <img src="test3.png" alt="Customer testimonial screenshot" />
+                </div>
+                <p class="proof-slot__copy">For dog owners who feel like they have already tried everything.</p>
               </div>
             </div>
           </div>
@@ -760,11 +755,11 @@
             <div class="faq-list">
               <div class="faq-item">
                 <h3>What if I have already tried stopping, treats, or a harness?</h3>
-                <p>That is exactly who this is for. Those things can help in the moment and still not fix what the walk is teaching.</p>
+                <p>That is exactly who this is for. A lot of people have already tried treats, stopping, or a harness and still feel like nothing is really fixing it.</p>
               </div>
               <div class="faq-item">
                 <h3>Will this help on real walks, not just indoors?</h3>
-                <p>Yes. It is built around real walks, real distractions, and what to do when things go off track.</p>
+                <p>Yes. It is made for normal walks, with distractions, bad timing, and the moments where your dog just wants to go wherever it wants.</p>
               </div>
             </div>
           </div>
@@ -773,9 +768,9 @@
         <section class="section final-cta">
           <div class="wrap">
             <p class="eyebrow">Before you go</p>
-            <h2>Use this before the next walk teaches more pulling again.</h2>
+            <h2>Use this before tomorrow's walk turns into the same fight again.</h2>
             <p class="lede">
-              If nothing changes on the walk, nothing changes for your dog.
+              If tomorrow's walk goes the same way again, you are right back where you started.
             </p>
 
             <div class="hero__actions" style="margin-top: 1.4rem;">
