@@ -3,791 +3,375 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Calm Walk Method | Help Your Dog Stop Pulling on Walks</title>
+    <title>The Easy Walk Reset | Stop Dogs From Pulling on Walks</title>
     <meta
       name="description"
-      content="A short download for dog owners who want calmer, easier walks and need a clear fix for lead pulling."
+      content="A practical leash-pulling guide for dog owners who are tired of being dragged, ignored outside, and stuck with advice that falls apart on real walks."
     />
-    <style>
-      :root {
-        --bg: #f6efe5;
-        --bg-warm: #eee1d0;
-        --paper: #fffaf2;
-        --hero-bg: #f5efe4;
-        --hero-surface: rgba(255, 250, 242, 0.88);
-        --text: #16212c;
-        --muted: #5e655f;
-        --line: #e2d6c4;
-        --accent: #3d89bf;
-        --accent-deep: #295f87;
-        --shadow: 0 18px 40px rgba(42, 38, 32, 0.09);
-        --radius: 20px;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        overflow-x: hidden;
-        font-family: "Segoe UI", Arial, sans-serif;
-        color: var(--text);
-        background:
-          radial-gradient(circle at top right, rgba(255, 255, 255, 0.7), transparent 28%),
-          linear-gradient(180deg, #fcf8f1 0%, var(--bg) 48%, #f4ebde 100%);
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      img {
-        display: block;
-        max-width: 100%;
-      }
-
-      h1,
-      h2,
-      h3,
-      p,
-      ul {
-        margin: 0;
-      }
-
-      .wrap {
-        width: min(calc(100% - 1.5rem), 1040px);
-        margin: 0 auto;
-      }
-
-      .site-header {
-        padding: 0.95rem 0 0;
-        background: linear-gradient(180deg, #fbf8f1 0%, var(--hero-bg) 100%);
-        border-bottom: 1px solid rgba(22, 33, 44, 0.06);
-      }
-
-      .site-header__inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 0.9rem;
-        padding: 0.8rem 0 0.9rem;
-      }
-
-      .site-header__brand {
-        flex: 0 1 auto;
-        min-width: 0;
-        white-space: nowrap;
-        font-size: 0.88rem;
-        font-weight: 800;
-        letter-spacing: -0.01em;
-        line-height: 1;
-        color: var(--text);
-      }
-
-      .hero,
-      .section {
-        padding: 4.5rem 0;
-      }
-
-      .hero {
-        padding: 2.4rem 0 4.8rem;
-        background:
-          radial-gradient(circle at top left, rgba(255, 255, 255, 0.78), transparent 34%),
-          linear-gradient(180deg, #fbf8f1 0%, var(--hero-bg) 100%);
-      }
-
-      .hero__grid,
-      .two-col {
-        display: grid;
-        gap: 2rem;
-      }
-
-      .hero__copy {
-        display: grid;
-        align-content: center;
-        gap: 1.1rem;
-        max-width: 40rem;
-      }
-
-      .hero__media {
-        display: grid;
-        align-content: center;
-        justify-items: center;
-      }
-
-      .eyebrow {
-        display: inline-block;
-        margin-bottom: 0.95rem;
-        font-size: 0.8rem;
-        font-weight: 800;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--accent-deep);
-      }
-
-      h1,
-      h2 {
-        font-family: Georgia, "Times New Roman", serif;
-        line-height: 1.03;
-        letter-spacing: -0.04em;
-      }
-
-      h1 {
-        max-width: 13.2ch;
-        font-size: clamp(2.1rem, 5vw, 3.6rem);
-        padding-bottom: 0.3rem;
-      }
-
-      h2 {
-        max-width: 12ch;
-        font-size: clamp(1.7rem, 3.8vw, 2.45rem);
-        padding-bottom: 0.26rem;
-      }
-
-      h3 {
-        font-size: 1.06rem;
-        line-height: 1.35;
-        padding-bottom: 0.2rem;
-      }
-
-      p,
-      li {
-        font-size: 1rem;
-        line-height: 1.68;
-        color: var(--muted);
-      }
-
-      .lede {
-        max-width: 41rem;
-        margin-top: 1rem;
-        font-size: 1.05rem;
-      }
-
-      .hero .eyebrow,
-      .hero .lede,
-      .hero .hero__actions,
-      .hero .hero__trust {
-        margin-top: 0;
-      }
-
-      .hero .eyebrow {
-        margin-bottom: 0;
-      }
-
-      .hero .lede {
-        max-width: 35rem;
-      }
-
-      .lede--stacked {
-        max-width: 34rem;
-        color: var(--text);
-      }
-
-      .lede--stacked span {
-        display: block;
-      }
-
-      .lede--stacked span + span {
-        margin-top: 0.18rem;
-      }
-
-      .lede--stacked .lede-gap {
-        margin-top: 0.7rem;
-      }
-
-      .offer-list,
-      .plain-list,
-      .faq-list {
-        margin: 1.2rem 0 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .offer-list li,
-      .plain-list li {
-        position: relative;
-        padding-left: 1.45rem;
-      }
-
-      .offer-list li + li,
-      .plain-list li + li {
-        margin-top: 0.7rem;
-      }
-
-      .offer-list li::before,
-      .plain-list li::before {
-        content: "";
-        position: absolute;
-        top: 0.58rem;
-        left: 0;
-        width: 0.55rem;
-        height: 0.55rem;
-        border-radius: 999px;
-        background: var(--accent);
-      }
-
-      .hero__actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.85rem;
-        margin-top: 1.65rem;
-      }
-
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 3.2rem;
-        padding: 0.95rem 1.35rem;
-        border-radius: 999px;
-        border: 1px solid rgba(41, 95, 135, 0.18);
-        background: var(--accent);
-        color: #fffdf9;
-        font-size: 0.98rem;
-        font-weight: 800;
-        box-shadow: 0 12px 24px rgba(61, 137, 191, 0.18);
-        transition:
-          transform 180ms ease,
-          box-shadow 180ms ease,
-          background-color 180ms ease;
-      }
-
-      .btn:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 18px 28px rgba(61, 137, 191, 0.22);
-      }
-
-      .btn--nav {
-        flex: 0 0 auto;
-        margin-left: auto;
-        min-height: 2.5rem;
-        padding: 0.65rem 1rem;
-        font-size: 0.88rem;
-        box-shadow: none;
-      }
-
-      .hero__trust {
-        margin-top: 1.1rem;
-        font-size: 0.94rem;
-        font-weight: 700;
-        color: var(--accent-deep);
-      }
-
-      .product-shot {
-        overflow: hidden;
-        border: 1px solid rgba(22, 33, 44, 0.08);
-        border-radius: 18px;
-        background: var(--paper);
-        box-shadow: var(--shadow);
-      }
-
-      .hero .product-shot {
-        width: min(100%, 470px);
-        padding: 1.1rem;
-        border-radius: 28px;
-        border-color: rgba(22, 33, 44, 0.05);
-        background: var(--hero-surface);
-        box-shadow: 0 26px 48px rgba(22, 33, 44, 0.1);
-      }
-
-      .proof-intro {
-        max-width: 31rem;
-      }
-
-      .section {
-        border-top: 1px solid var(--line);
-        background: linear-gradient(180deg, rgba(255, 251, 245, 0.62) 0%, rgba(246, 239, 229, 0.34) 100%);
-      }
-
-      .section--warm {
-        background: linear-gradient(180deg, rgba(239, 225, 208, 0.72) 0%, rgba(246, 239, 229, 0.32) 100%);
-      }
-
-      .section--problem {
-        background: linear-gradient(180deg, rgba(243, 235, 225, 0.92) 0%, rgba(249, 243, 235, 0.3) 100%);
-      }
-
-      .section--problem .lede,
-      .section--problem .line-item p,
-      .section--problem .proof-slot__copy {
-        color: #555d58;
-      }
-
-      .section--problem .line-group {
-        border-top-color: #d5c7b4;
-      }
-
-      .section--problem .line-item {
-        padding: 0.88rem 0;
-        border-bottom-color: #ddd0be;
-      }
-
-      .section--problem .line-item strong {
-        margin-bottom: 0.18rem;
-      }
-
-      .stack {
-        display: grid;
-        gap: 1rem;
-      }
-
-      .line-group {
-        margin-top: 1.45rem;
-        border-top: 1px solid var(--line);
-      }
-
-      .line-item {
-        padding: 1rem 0;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .line-item strong {
-        display: block;
-        margin-bottom: 0.25rem;
-        color: var(--text);
-      }
-
-      .note {
-        margin-top: 1.2rem;
-        padding: 1.05rem 1.1rem;
-        border-left: 4px solid var(--accent);
-        background: rgba(255, 250, 242, 0.82);
-      }
-
-      .note--belief {
-        border-left-width: 5px;
-        background: rgba(255, 250, 242, 0.96);
-        box-shadow: 0 10px 24px rgba(42, 38, 32, 0.05);
-      }
-
-      .note--belief p {
-        color: var(--text);
-      }
-
-      .note--belief strong {
-        display: block;
-        margin-bottom: 0.18rem;
-      }
-
-      .proof-slot {
-        margin-top: 1.45rem;
-        padding: 1rem;
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        background: var(--hero-surface);
-        box-shadow: 0 14px 28px rgba(42, 38, 32, 0.06);
-      }
-
-      .proof-slot--flat {
-        margin-top: 0;
-      }
-
-      .proof-slot__frame {
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        overflow: hidden;
-        background: var(--paper);
-      }
-
-      .proof-slot__frame img {
-        width: 100%;
-        height: auto;
-      }
-
-      .proof-slot__label {
-        margin-top: 0.8rem;
-        font-size: 0.84rem;
-        font-weight: 800;
-        color: var(--text);
-      }
-
-      .proof-slot__copy {
-        margin-top: 0.35rem;
-        font-size: 0.94rem;
-      }
-
-      .offer-shell {
-        padding: 1.5rem;
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: rgba(255, 250, 242, 0.82);
-        box-shadow: var(--shadow);
-      }
-
-      .offer-box {
-        margin-top: 0;
-        padding: 1.45rem;
-        border: 1px solid rgba(41, 95, 135, 0.14);
-        border-radius: 18px;
-        background: linear-gradient(180deg, #fffaf1 0%, var(--bg-warm) 100%);
-      }
-
-      .price-label {
-        margin-bottom: 0.25rem;
-        font-size: 0.82rem;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: var(--accent-deep);
-      }
-
-      .price {
-        font-size: clamp(2.6rem, 7vw, 3.5rem);
-        font-weight: 900;
-        line-height: 0.95;
-        color: var(--text);
-      }
-
-      .offer-box .btn {
-        width: 100%;
-        margin-top: 1rem;
-      }
-
-      .offer-micro {
-        margin-top: 0.9rem;
-        font-size: 0.94rem;
-        font-weight: 700;
-        color: var(--accent-deep);
-      }
-
-      .final-cta .wrap {
-        max-width: 42rem;
-        text-align: center;
-      }
-
-      .final-cta h2,
-      .final-cta .lede,
-      .final-cta .hero__trust {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .final-cta h2 {
-        max-width: 14ch;
-      }
-
-      .final-cta .hero__actions {
-        justify-content: center;
-      }
-
-      .faq-list {
-        margin-top: 1.5rem;
-        border-top: 1px solid var(--line);
-      }
-
-      .faq-item {
-        padding: 1.1rem 0;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .faq-item p {
-        margin-top: 0.45rem;
-      }
-
-      .final-cta {
-        padding-bottom: 5rem;
-      }
-
-      @media (min-width: 780px) {
-        .wrap {
-          width: min(calc(100% - 2.5rem), 1040px);
-        }
-
-        .hero__grid {
-          grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.88fr);
-          align-items: center;
-          gap: 4rem;
-        }
-
-        .two-col {
-          grid-template-columns: minmax(0, 1fr) minmax(320px, 0.88fr);
-          align-items: start;
-        }
-      }
-
-      @media (max-width: 779px) {
-        .wrap {
-          width: min(calc(100% - 1rem), 1040px);
-        }
-
-        .hero,
-        .section {
-          padding: 3.8rem 0;
-        }
-
-        .hero {
-          padding: 1.9rem 0 3.2rem;
-        }
-
-        .hero__grid {
-          gap: 2rem;
-        }
-
-        .hero__copy {
-          gap: 1rem;
-        }
-
-        .hero__media {
-          gap: 0.85rem;
-        }
-
-        .hero .product-shot {
-          max-width: 380px;
-          margin: 0 auto;
-          padding: 0.75rem;
-          border-radius: 22px;
-        }
-
-        .site-header {
-          padding-top: 0.7rem;
-        }
-
-        .site-header__inner {
-          display: grid;
-          grid-template-columns: minmax(0, 1fr) auto;
-          align-items: center;
-          gap: 0.55rem;
-          padding: 0.5rem 0 0.75rem;
-          justify-content: stretch;
-        }
-
-        .site-header__brand {
-          font-size: 0.74rem;
-        }
-
-        .btn--nav {
-          margin-left: 0;
-          justify-self: end;
-          min-height: 2.35rem;
-          padding: 0.58rem 0.82rem;
-          font-size: 0.82rem;
-        }
-
-        h1 {
-          max-width: 15.5ch;
-          font-size: clamp(1.95rem, 8.6vw, 2.5rem);
-          text-align: left;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        .lede {
-          margin-top: 0;
-          font-size: 1rem;
-          line-height: 1.6;
-        }
-
-        .hero__actions {
-          margin-top: 0.1rem;
-          flex-direction: column;
-          align-items: stretch;
-        }
-
-        .hero__actions .btn {
-          width: 100%;
-        }
-
-        .hero__trust {
-          margin-top: 0;
-          max-width: 28rem;
-          font-size: 0.9rem;
-        }
-
-        .offer-shell,
-        .offer-box {
-          padding: 1.25rem;
-        }
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body id="top">
-    <div class="shell">
-      <header class="site-header">
-        <div class="wrap site-header__inner">
-          <a class="site-header__brand" href="#top">The Calm Walk Method</a>
-          <a class="btn btn--nav" href="https://buy.stripe.com/7sY14m3QDdwMauI59MbZe0z">Buy now</a>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar__inner">
+          <a class="brand" href="#top">
+            <span class="brand__kicker">Dog walking</span>
+            <span class="brand__name">The Easy Walk Reset</span>
+          </a>
+          <a class="topbar__cta" href="#offer">Get it for &pound;19</a>
         </div>
       </header>
 
-      <main>
+      <main id="top">
         <section class="hero">
-          <div class="wrap hero__grid">
-            <div class="hero__copy">
-              <p class="eyebrow">For dog owners sick of being dragged on walks</p>
-              <h1>Stop the pulling cycle before the next walk.</h1>
-              <p class="lede">
-                This short guide shows you what to change on the walk so your dog starts walking with you instead of pulling ahead.
+          <div class="hero__backdrop" aria-hidden="true"></div>
+          <div class="container hero__grid">
+            <div class="hero__content">
+              <div class="hero__intro-row">
+                <p class="eyebrow">For dog owners who are tired of being dragged on walks</p>
+              </div>
+              <h1>Stop your dog from pulling on walks.</h1>
+              <p class="hero__lede">
+                If walks feel like pulling, stopping, redirecting, and getting ignored outside,
+                this shows you what to do differently so the next walk feels calmer, easier, and
+                less like the same frustrating fight again.
+              </p>
+              <p class="hero__format">
+                Made for people who have already tried the usual tips and still feel like nothing
+                is really fixing it.
+              </p>
+              <p class="hero__format-note">
+                Instant-access digital guide with a quick-start plan, printable walk sheet, and simple troubleshooting help.
               </p>
 
               <div class="hero__actions">
-                <a class="btn" href="https://buy.stripe.com/7sY14m3QDdwMauI59MbZe0z">Get instant access for &pound;19</a>
+                <a class="btn btn--primary btn--hero" href="#offer">Get it for &pound;19</a>
+                <a class="hero__inline-link" href="#included">See what is inside</a>
               </div>
 
-              <p class="hero__trust">Instant download. Use it before the next walk. 30-day money-back guarantee.</p>
-            </div>
-
-            <div class="hero__media">
-              <div class="product-shot">
-                <img src="productimage.jpg" alt="The Calm Walk Method product image" />
+              <div class="trust-strip" aria-label="Quick reassurance points">
+                <span>One-time payment</span>
+                <span>Use it before the next walk</span>
+                <span>Simple steps</span>
+                <span>Worth it if one walk feels easier</span>
               </div>
-            </div>
-          </div>
-        </section>
 
-        <section class="section section--problem" id="included">
-          <div class="wrap two-col">
-            <div>
-              <p class="eyebrow">Why it keeps happening</p>
-              <h2>If pulling still gets your dog forward, it keeps coming back.</h2>
-              <p class="lede">
-                That is why treats, stopping, and harnesses can seem like they help, but your dog still pulls the whole way home. If pulling still gets them where they want to go, it does not really stop.
-              </p>
-            </div>
-
-            <div class="line-group" style="margin-top: 0;">
-              <div class="line-item">
-                <strong>The lead stays tight most of the walk</strong>
-                <p>Your dog surges ahead and the walk becomes physical fast.</p>
-              </div>
-              <div class="line-item">
-                <strong>Stopping every few seconds turns walks into a chore</strong>
-                <p>What should be simple becomes slow, stop-start, and frustrating.</p>
-              </div>
-              <div class="line-item">
-                <strong>Outside distractions wipe out your progress</strong>
-                <p>Smells, dogs, and excitement undo what felt fine at home.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--warm">
-          <div class="wrap two-col">
-            <div>
-              <p class="eyebrow">What To Do Next</p>
-              <h2>Short PDF. Read tonight. Use tomorrow.</h2>
-              <p class="lede">
-                This shows you what to do on the next walk so you stop guessing, stop stopping every few seconds, and stop coming home feeling like nothing changed.
-              </p>
-              <ul class="offer-list">
-                <li>Know what to do the moment the lead goes tight</li>
-                <li>Know what to reward when your dog gets it right</li>
-                <li>Know what to do when your dog is ignoring you outside</li>
-              </ul>
-            </div>
-
-            <div class="line-group" style="margin-top: 0;">
-              <div class="line-item">
-                <strong>Why the pulling keeps repeating</strong>
-                <p>So you stop wondering why treats, stopping, and harnesses have not fixed it.</p>
-              </div>
-              <div class="line-item">
-                <strong>What to do on the next walk</strong>
-                <p>So you are not reacting late and getting dragged half the walk again.</p>
-              </div>
-              <div class="line-item">
-                <strong>What to do when the walk starts falling apart</strong>
-                <p>So one burst of excitement does not ruin the whole walk.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="wrap two-col">
-            <div>
-              <p class="eyebrow">Proof</p>
-              <h2>This is for dog owners who feel like they have already tried everything.</h2>
-              <p class="lede proof-intro">
-                Not people looking for perfect heelwork. People who are fed up with being dragged, stopping every few seconds, and dreading the next walk.
-              </p>
-            </div>
-
-            <div class="stack">
-              <div class="proof-slot proof-slot--flat">
-                <div class="proof-slot__frame">
-                  <img src="test2.png" alt="Customer testimonial screenshot" />
-                </div>
-                <p class="proof-slot__copy">"It gave clear steps for the next walk instead of the same old advice."</p>
-              </div>
-              <div class="proof-slot proof-slot--flat">
-                <div class="proof-slot__frame">
-                  <img src="testimonial1.jpg" alt="Customer testimonial screenshot" />
-                </div>
-                <p class="proof-slot__copy">Another owner who thought it would be more of the same said it finally gave them something they could actually use.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--warm" id="offer">
-          <div class="wrap two-col">
-            <div>
-              <p class="eyebrow">Get it now</p>
-              <h2>Get this now and use it before tomorrow's walk.</h2>
-              <p class="lede">
-                Read it tonight. Use it tomorrow. If tomorrow's walk goes the same way again, nothing changes.
-              </p>
-              <ul class="offer-list">
-                <li>Instant download</li>
-                <li>Pay once, use it straight away</li>
-                <li>30-day money-back guarantee</li>
-              </ul>
-            </div>
-
-            <div class="offer-shell">
-              <div class="offer-box">
-                <p class="price-label">Pay once</p>
-                <div class="price">&pound;19</div>
-                <p class="lede" style="margin-top: 0.8rem;">
-                  Try it before the next walk. If it does not help, get your money back.
+              <div class="hero__testimonial">
+                <img
+                  class="hero__testimonial-image"
+                  src="testimonial1.jpg"
+                  alt="Customer message saying this was the first thing that worked on real walks."
+                />
+                <p class="hero__trust-line">
+                  From owners who thought they had already tried everything.
                 </p>
-                <a class="btn" href="https://buy.stripe.com/7sY14m3QDdwMauI59MbZe0z">Get instant access</a>
-                <p class="offer-micro">If you keep guessing, tomorrow's walk will probably feel exactly the same.</p>
+              </div>
+            </div>
+
+            <aside class="hero__visual" aria-label="Product preview">
+              <div class="hero-panel">
+                <div class="hero-panel__image hero-panel__image--placeholder">
+                  <img
+                    class="hero-product-image"
+                    src="productimage.jpg"
+                    alt="The Easy Walk Reset book cover"
+                  />
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section section--warm problem">
+          <div class="container">
+            <div class="section-heading section-heading--left">
+              <p class="eyebrow">Why this keeps happening</p>
+              <h2>Why nothing has stuck yet</h2>
+              <p>
+                What looks fine at home can fall apart outside if pulling still gets your dog where
+                they want to go, so the same stressful walk keeps happening again and again.
+              </p>
+            </div>
+
+            <div class="plain-steps">
+              <article class="plain-step">
+                <span class="number-marker">01</span>
+                <div>
+                  <h3>It works at home, then disappears outside</h3>
+                  <p>
+                    Your dog can look fine in easy places, then go straight back to pulling once
+                    the real walk starts.
+                  </p>
+                </div>
+              </article>
+              <article class="plain-step">
+                <span class="number-marker">02</span>
+                <div>
+                  <h3>The usual fixes stop helping</h3>
+                  <p>
+                    Treats, stopping, turning around, and tools can help a bit, but often stop
+                    helping once the walk gets messy.
+                  </p>
+                </div>
+              </article>
+              <article class="plain-step">
+                <span class="number-marker">03</span>
+                <div>
+                  <h3>The same bad walk keeps repeating</h3>
+                  <p>
+                    If pulling still gets your dog forward, the next walk teaches the same habit
+                    all over again, so nothing really changes and walks keep feeling like hard work.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="included">
+          <div class="container includes-layout">
+            <div>
+              <div class="section-heading section-heading--left">
+                <p class="eyebrow">What you get</p>
+                <h2>What you get</h2>
+                <p>Not random tips. A clear plan you can use on the next walk so you stop guessing.</p>
+              </div>
+
+              <div class="includes-list">
+                <article class="include-row">
+                  <span class="include-row__tag">01</span>
+                  <div>
+                    <h3>Quick start guide</h3>
+                    <p>Plain-English walkthrough of what to change and what to do before your next walk.</p>
+                  </div>
+                </article>
+                <article class="include-row">
+                  <span class="include-row__tag">02</span>
+                  <div>
+                    <h3>Printable walk sheet + first 10 minutes plan</h3>
+                    <p>A simple page to check before you go out so the walk starts better instead of going wrong straight away.</p>
+                  </div>
+                </article>
+                <article class="include-row">
+                  <span class="include-row__tag">03</span>
+                  <div>
+                    <h3>"Leash went tight" page</h3>
+                    <p>What to do the moment your dog starts dragging again so pulling stops getting them where they want to go.</p>
+                  </div>
+                </article>
+                <article class="include-row">
+                  <span class="include-row__tag">04</span>
+                  <div>
+                    <h3>How to reward the right moments</h3>
+                    <p>So you stop missing the small moments that matter.</p>
+                  </div>
+                </article>
+                <article class="include-row">
+                  <span class="include-row__tag">05</span>
+                  <div>
+                    <h3>"Treats stopped working" page</h3>
+                    <p>What to do when outside is more exciting than food and the walk starts getting away from you.</p>
+                  </div>
+                </article>
+                <article class="include-row">
+                  <span class="include-row__tag">06</span>
+                  <div>
+                    <h3>Help for harder walks</h3>
+                    <p>For dogs who get too wound up around people, movement, or other dogs.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <aside class="snapshot-card">
+              <span class="snapshot-card__label">What changes</span>
+              <h3>What changes</h3>
+              <ul class="feature-list">
+                <li>Less pulling</li>
+                <li>Less stopping every few seconds</li>
+                <li>Less guessing</li>
+                <li>More focus outside</li>
+                <li>A walk that feels more normal next time</li>
+              </ul>
+              <p class="proof-line">
+                Not a giant obedience course. Just help for the walk that keeps going wrong so you
+                can finally enjoy it more.
+              </p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section section--dark">
+          <div class="container why-layout">
+            <div class="why-copy">
+              <p class="eyebrow eyebrow--dark">Why this feels different</p>
+              <h2>Why this feels different</h2>
+              <p>This is built around the part that usually goes wrong: outside, when walks stop feeling simple.</p>
+
+              <div class="proof-list">
+                <div class="proof-item">
+                  <span class="proof-dot" aria-hidden="true"></span>
+                  <p>
+                    <strong>Your dog is not just being stubborn.</strong> They do not know how to
+                    walk with you outside yet.
+                  </p>
+                </div>
+                <div class="proof-item">
+                  <span class="proof-dot" aria-hidden="true"></span>
+                  <p>
+                    <strong>It is built for real walks.</strong> Not just what works in the house
+                    or garden.
+                  </p>
+                </div>
+                <div class="proof-item">
+                  <span class="proof-dot" aria-hidden="true"></span>
+                  <p>
+                    <strong>It tells you what to do in the moment.</strong> Especially when food
+                    gets ignored or the leash goes tight.
+                  </p>
+                </div>
+              </div>
+
+              <div class="difference-callout">
+                <h3>Why pay for this instead of trying more free advice?</h3>
+                <p>
+                  Because free advice usually gives you one tip at a time. This gives you the full
+                  walk plan in one place, so you are not trying to remember five different things
+                  while your dog is already pulling. For &pound;19, it is easier to just have the
+                  plan than keep hoping the next free tip will finally fix it.
+                </p>
+              </div>
+            </div>
+
+            <div class="trust-panel">
+              <span class="snapshot-card__label">Why buy now</span>
+              <h3>Use it before the next walk goes the same way again.</h3>
+              <ul class="mini-list">
+                <li>Start with the next walk, not a huge course</li>
+                <li>Use it right away</li>
+                <li>Helpful for plain pulling and more overexcited walks</li>
+                <li>One easier walk makes it worth the &pound;19</li>
+              </ul>
+              <p class="trust-panel__close">
+                Every delayed walk is one more walk that feels harder than it should.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section offer" id="offer">
+          <div class="container">
+            <div class="offer-card">
+              <div class="offer-card__content">
+                <p class="eyebrow">Get The Easy Walk Reset</p>
+                <h2>Buy this if you are sick of the same bad walk.</h2>
+                <p class="offer-card__summary">
+                  The Easy Walk Reset is for dogs who pull, rush ahead, ignore food outside, or get
+                  too wound up for the usual advice to keep working.
+                </p>
+                <p class="offer-card__format-line">
+                  Format: digital guide + printable walk sheet + quick-reference pages.
+                </p>
+
+                <div class="offer-card__list-wrap">
+                  <ul class="offer-list">
+                    <li>Quick start guide</li>
+                    <li>First 10 minutes plan</li>
+                    <li>What to do when the leash goes tight</li>
+                    <li>How to reward the right moments</li>
+                    <li>What to do when treats stop working</li>
+                    <li>Help for harder walks</li>
+                  </ul>
+                </div>
+
+                <p class="offer-card__summary">
+                  Not a bloated course. Not a pile of random tips. Just something you can actually use outside when the walk starts going wrong.
+                </p>
+              </div>
+
+              <div class="offer-card__checkout">
+                <p class="offer-card__price-label">One-time price</p>
+                <p class="offer-card__price">&pound;19</p>
+                <p class="offer-card__meta">Worth it if it stops even one more awful walk from going the same way again.</p>
+                <a class="btn btn--primary btn--full" href="thank-you.html">Get it now</a>
+                <p class="offer-card__guarantee">
+                  Try it on your next walk. If it feels like more of the same advice you have
+                  already tried, you are covered by the refund policy.
+                </p>
+                <p class="offer-card__microcopy">Small price. Useful straight away. Use it before the next walk.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="section" id="faq">
-          <div class="wrap">
-            <p class="eyebrow">FAQ</p>
-            <h2>Two quick questions.</h2>
-
-            <div class="faq-list">
-              <div class="faq-item">
-                <h3>What if I have already tried stopping, treats, or a harness?</h3>
-                <p>That is exactly who this is for. A lot of people have already tried treats, stopping, or a harness and still feel like nothing is really fixing it.</p>
-              </div>
-              <div class="faq-item">
-                <h3>Will this help on real walks, not just indoors?</h3>
-                <p>Yes. It is made for normal walks, with distractions, bad timing, and the moments where your dog just wants to go wherever it wants.</p>
-              </div>
+        <section class="section faq-section">
+          <div class="container">
+            <div class="section-heading section-heading--left faq-section__intro">
+              <p class="eyebrow">FAQ</p>
+              <h2>Quick questions</h2>
             </div>
-          </div>
-        </section>
 
-        <section class="section final-cta">
-          <div class="wrap">
-            <p class="eyebrow">Before you go</p>
-            <h2>Use this before tomorrow's walk turns into the same fight again.</h2>
-            <p class="lede">
-              If tomorrow's walk goes the same way again, you are right back where you started.
-            </p>
-
-            <div class="hero__actions" style="margin-top: 1.4rem;">
-              <a class="btn" href="https://buy.stripe.com/7sY14m3QDdwMauI59MbZe0z">Get The Calm Walk Method for &pound;19</a>
+            <div class="faq">
+              <article class="faq-item">
+                <button class="faq-item__trigger" type="button" aria-expanded="true">
+                  <span>What exactly is this?</span>
+                  <span class="faq-item__plus" aria-hidden="true"></span>
+                </button>
+                <div class="faq-item__content">
+                  <p>
+                    A digital guide that shows you what to do before the walk, during the walk, and
+                    when things start going wrong.
+                  </p>
+                </div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-item__trigger" type="button" aria-expanded="false">
+                  <span>What if I have already tried treats, stopping, or a harness?</span>
+                  <span class="faq-item__plus" aria-hidden="true"></span>
+                </button>
+                <div class="faq-item__content" hidden>
+                  <p>
+                    Then this is probably for you. It shows why those things help a bit but do not
+                    really fix it outside.
+                  </p>
+                </div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-item__trigger" type="button" aria-expanded="false">
+                  <span>Will this still help if my dog gets too excited outside?</span>
+                  <span class="faq-item__plus" aria-hidden="true"></span>
+                </button>
+                <div class="faq-item__content" hidden>
+                  <p>
+                    Yes. It covers dogs who get too excited outside, ignore treats, or get wound up
+                    fast around distractions.
+                  </p>
+                </div>
+              </article>
             </div>
-            <p class="hero__trust">Instant download. 30-day money-back guarantee.</p>
           </div>
         </section>
       </main>
     </div>
+
+    <script>
+      const faqButtons = document.querySelectorAll(".faq-item__trigger");
+
+      faqButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const expanded = button.getAttribute("aria-expanded") === "true";
+          const content = button.nextElementSibling;
+
+          button.setAttribute("aria-expanded", String(!expanded));
+          content.hidden = expanded;
+        });
+      });
+    </script>
   </body>
 </html>
