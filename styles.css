@@ -678,8 +678,12 @@ p {
 }
 
 @media (max-width: 759px) {
+  .hero {
+    padding: 2.1rem 0 2.4rem;
+  }
+
   h1 {
-    max-width: 9ch;
+    max-width: none;
     font-size: clamp(2.1rem, 9vw, 3rem);
   }
 
@@ -692,6 +696,10 @@ p {
 @media (max-width: 479px) {
   body {
     font-size: 16px;
+  }
+
+  .hero {
+    padding: 1.55rem 0 2rem;
   }
 
   .container {
